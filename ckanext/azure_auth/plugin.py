@@ -51,8 +51,9 @@ class AzureAuthPlugin(plugins.SingletonPlugin):
         '''
         toolkit.add_template_directory(config, 'templates')
         toolkit.add_public_directory(config, 'public')
-
-        toolkit.add_ckan_admin_tab(config, 'azure_admin.azure_auth_config', 'ADFS', icon='windows')
+        
+        # Removing this line to allow this ext to work in CKAN 2.11
+        # toolkit.add_ckan_admin_tab(config, 'azure_admin.azure_auth_config', 'ADFS', icon='windows')
 
         if ATTR_TENANT_ID in config:
             # If a tenant ID was set, switch to Azure AD mode
