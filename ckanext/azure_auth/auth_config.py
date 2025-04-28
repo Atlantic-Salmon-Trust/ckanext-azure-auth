@@ -21,7 +21,7 @@ AUTH_SERVICE = 'adfs'
 ADFS_SESSION_PREFIX = 'adfs-'
 
 # Config keys
-ATTR_AD_SERVER = f'{_EXTNAME}.ad_server'
+#ATTR_AD_SERVER = f'{_EXTNAME}.ad_server'
 ATTR_WT_REALM = f'{_EXTNAME}.wtrealm'
 ATTR_METADATA_URL = f'{_EXTNAME}.metadata_url'
 ATTR_HELP_TEXT = f'{_EXTNAME}.login_help_text'
